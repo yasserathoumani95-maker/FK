@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Livre de cuisine comorienne — FaidaKomori</title>
+  <meta name="description" content="Soutenez le projet de Fatima Abdou : un recueil illustré de 120 recettes traditionnelles comoriennes." />
+  <meta property="og:title"       content="Livre de cuisine comorienne — FaidaKomori" />
+  <meta property="og:description" content="Soutenez le projet de Fatima Abdou : un recueil illustré de 120 recettes traditionnelles comoriennes." />
+  <meta property="og:type"        content="website" />
+  <meta name="theme-color"        content="#00C853" />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">
+          <img src="img/logo-fk-icon.svg" alt="FaidaKomori logo" class="navbar__logo-img" />Faida<span>Komori</span>
+        </a>
+        <ul class="navbar__links">
+          <li><a href="index.html#comment-ca-marche">Comment ça marche</a></li>
+          <li><a href="index.html#modeles">Les 3 modèles</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="deposer.html" class="btn btn-primary btn-sm">Déposer mon projet <span class="btn-icon-wrap">→</span></a></li>
+        </ul>
+        <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="navbar__mobile">
+      <a href="index.html#comment-ca-marche">Comment ça marche</a>
+      <a href="index.html#modeles">Les 3 modèles</a>
+      <a href="projets.html">Projets</a>
+      <a href="deposer.html" class="btn btn-primary btn-sm">Déposer mon projet</a>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div style="background:var(--navy-deep);padding:5.5rem 0 1.5rem;">
+    <div class="container">
+      <nav aria-label="Fil d'Ariane" style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:rgba(255,255,255,0.45);">
+        <a href="index.html" style="color:rgba(255,255,255,0.45);transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Accueil</a>
+        <span>›</span>
+        <a href="projets.html" style="color:rgba(255,255,255,0.45);transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Projets</a>
+        <span>›</span>
+        <span style="color:rgba(255,255,255,0.75);">Livre de cuisine comorienne</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="section" style="padding-top:2rem;">
+    <div class="container">
+      <div class="detail-grid">
+
+        <!-- ── Colonne gauche ─────────────────────────────── -->
+        <div>
+
+          <!-- Galerie visuelle -->
+          <div class="detail-gallery">📚</div>
+
+          <!-- Badges + meta -->
+          <div class="detail-badges">
+            <span class="badge badge-prevente">📦 Prévente</span>
+            <span class="badge" style="background:rgba(13,34,68,0.08);color:var(--navy);border:1px solid rgba(13,34,68,0.12);">🎭 Culture</span>
+            <span class="badge" style="background:rgba(10,123,108,0.08);color:var(--ocean);border:1px solid rgba(10,123,108,0.15);">🏝️ Grande Comore</span>
+          </div>
+
+          <h1 class="detail-title" style="font-size:clamp(1.6rem,3vw,2.2rem);">Livre de cuisine comorienne</h1>
+          <p class="detail-author">
+            👩‍🍳 <strong>Fatima Abdou</strong> — Auteure culinaire, Moroni
+          </p>
+          <p class="detail-desc">
+            Ce recueil de 120 recettes est le fruit de 3 ans de collecte auprès des familles des trois îles. Des plats quotidiens aux préparations de fête, chaque recette est illustrée et accompagnée de l'histoire du plat et de ses variantes régionales. Un patrimoine culinaire à préserver pour les générations futures.
+          </p>
+
+          <!-- Tabs -->
+          <div data-tabs>
+            <div class="detail-tabs">
+              <button class="detail-tab active" data-tab="presentation">Présentation</button>
+              <button class="detail-tab" data-tab="budget">Budget</button>
+              <button class="detail-tab" data-tab="contreparties">Contreparties</button>
+              <button class="detail-tab" data-tab="actus">Actualités</button>
+            </div>
+
+            <!-- Tab : Présentation -->
+            <div class="detail-tab-content active" data-tab-content="presentation">
+              <h4 style="color:var(--navy);margin-bottom:1rem;">À propos du projet</h4>
+              <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.8;max-width:100%;margin-bottom:1.25rem;">
+                Les Comores ont une cuisine riche et méconnue, mélange d'influences arabes, africaines et malgaches. Pourtant, ces recettes se transmettent uniquement à l'oral, de mère en fille, et risquent de disparaître.
+              </p>
+              <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.8;max-width:100%;margin-bottom:1.25rem;">
+                Ce livre, imprimé en 500 exemplaires, sera disponible en librairie à Moroni et livré aux précommandes dans toute la diaspora. Une version numérique PDF sera également envoyée à chaque soutien.
+              </p>
+              <div style="background:var(--sand);border-radius:var(--radius);padding:1.25rem;border-left:3px solid var(--gold);">
+                <p style="font-size:0.88rem;color:var(--text-muted);margin:0;max-width:100%;">
+                  📖 <strong style="color:var(--text);">Contenu du livre :</strong> 120 recettes illustrées · Introduction historique · Glossaire des ingrédients locaux · Index par île · Version bilingue français/comorien
+                </p>
+              </div>
+
+              <h4 style="color:var(--navy);margin:2rem 0 1rem;">À propos de Fatima</h4>
+              <div style="display:flex;align-items:flex-start;gap:1.25rem;background:var(--off-white);border-radius:var(--radius);padding:1.4rem;border:1.5px solid var(--border-solid);">
+                <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--gold-pale),rgba(232,160,32,0.3));display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;">👩‍🍳</div>
+                <div>
+                  <p style="font-weight:700;color:var(--navy);margin-bottom:0.25rem;">Fatima Abdou</p>
+                  <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:0.5rem;">Auteure et chercheuse culinaire, Moroni</p>
+                  <p style="font-size:0.88rem;color:var(--text-muted);max-width:100%;line-height:1.7;">Passionnée de gastronomie comorienne depuis l'enfance, Fatima a passé 3 ans à sillonner les trois îles pour collecter et documenter les recettes traditionnelles auprès des familles.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab : Budget -->
+            <div class="detail-tab-content" data-tab-content="budget">
+              <h4 style="color:var(--navy);margin-bottom:1rem;">Utilisation des fonds — 400 000 KMF</h4>
+              <table class="fund-table">
+                <thead>
+                  <tr>
+                    <th>Poste de dépense</th>
+                    <th>Montant (KMF)</th>
+                    <th>%</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>🖨️ Impression 500 exemplaires</td>
+                    <td>220 000</td>
+                    <td><strong>55%</strong></td>
+                  </tr>
+                  <tr>
+                    <td>📸 Photographies culinaires</td>
+                    <td>60 000</td>
+                    <td><strong>15%</strong></td>
+                  </tr>
+                  <tr>
+                    <td>🎨 Graphisme & mise en page</td>
+                    <td>48 000</td>
+                    <td><strong>12%</strong></td>
+                  </tr>
+                  <tr>
+                    <td>📦 Expédition & logistique</td>
+                    <td>40 000</td>
+                    <td><strong>10%</strong></td>
+                  </tr>
+                  <tr>
+                    <td>🏛️ Commission FaidaKomori (3%)</td>
+                    <td>12 000</td>
+                    <td><strong>3%</strong></td>
+                  </tr>
+                  <tr>
+                    <td>📋 Dépôt légal & ISBN</td>
+                    <td>20 000</td>
+                    <td><strong>5%</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div style="margin-top:1rem;padding:1rem;background:var(--sand);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-muted);">
+                ℹ️ Si la collecte dépasse l'objectif, les fonds supplémentaires serviront à imprimer des exemplaires additionnels.
+              </div>
+            </div>
+
+            <!-- Tab : Contreparties -->
+            <div class="detail-tab-content" data-tab-content="contreparties">
+              <h4 style="color:var(--navy);margin-bottom:1rem;">Choisissez votre contrepartie</h4>
+              <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:1.5rem;max-width:100%;">En soutenant ce projet, vous recevez une contrepartie selon votre montant de soutien.</p>
+
+              <div class="reward-card" onclick="document.getElementById('custom-amount').value='3000';openModal('modal-soutien')">
+                <div class="reward-card__amount">3 000 KMF</div>
+                <p class="reward-card__title">🌟 Soutien digital</p>
+                <p class="reward-card__desc">Version PDF complète du livre + vos coordonnées dans les remerciements numériques.</p>
+              </div>
+
+              <div class="reward-card" onclick="document.getElementById('custom-amount').value='5000';openModal('modal-soutien')">
+                <div class="reward-card__amount">5 000 KMF</div>
+                <p class="reward-card__title">📗 Un exemplaire dédicacé</p>
+                <p class="reward-card__desc">1 exemplaire imprimé dédicacé par l'auteure + version PDF + votre nom dans les remerciements.</p>
+              </div>
+
+              <div class="reward-card" onclick="document.getElementById('custom-amount').value='10000';openModal('modal-soutien')">
+                <div class="reward-card__amount">10 000 KMF</div>
+                <p class="reward-card__title">📚 Pack famille</p>
+                <p class="reward-card__desc">2 exemplaires dédicacés + version PDF + citation de votre famille en page d'introduction.</p>
+              </div>
+
+              <div class="reward-card" onclick="document.getElementById('custom-amount').value='25000';openModal('modal-soutien')" style="border-color:var(--gold);background:rgba(232,160,32,0.04);">
+                <div style="position:absolute;top:-1px;right:1rem;background:var(--gold);color:var(--navy);font-size:0.68rem;font-weight:800;padding:0.2rem 0.65rem;border-radius:0 0 6px 6px;text-transform:uppercase;letter-spacing:0.06em;">Populaire</div>
+                <div class="reward-card__amount">25 000 KMF</div>
+                <p class="reward-card__title">🏆 Mécène du livre</p>
+                <p class="reward-card__desc">5 exemplaires + PDF + votre portrait et biographie sur une page dédiée dans le livre + invitation à la soirée de lancement à Moroni.</p>
+              </div>
+            </div>
+
+            <!-- Tab : Actualités -->
+            <div class="detail-tab-content" data-tab-content="actus">
+              <h4 style="color:var(--navy);margin-bottom:1.5rem;">Mises à jour du projet</h4>
+
+              <div style="border-left:2px solid var(--border-solid);padding-left:1.5rem;display:flex;flex-direction:column;gap:2rem;">
+
+                <div style="position:relative;">
+                  <div style="position:absolute;left:-1.85rem;top:4px;width:10px;height:10px;border-radius:50%;background:var(--gold);border:2px solid var(--white);box-shadow:0 0 0 2px var(--gold-dark);"></div>
+                  <p style="font-size:0.75rem;color:var(--text-light);font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.35rem;">5 janvier 2025</p>
+                  <h5 style="color:var(--navy);font-weight:600;margin-bottom:0.5rem;">Séance photo terminée !</h5>
+                  <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.72;max-width:100%;">Les 120 recettes ont été photographiées par Anissa, photographe basée à Moroni. Les photos sont magnifiques — on est très content du résultat ! La mise en page démarre la semaine prochaine.</p>
+                </div>
+
+                <div style="position:relative;">
+                  <div style="position:absolute;left:-1.85rem;top:4px;width:10px;height:10px;border-radius:50%;background:var(--ocean);border:2px solid var(--white);box-shadow:0 0 0 2px var(--ocean);"></div>
+                  <p style="font-size:0.75rem;color:var(--text-light);font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.35rem;">18 décembre 2024</p>
+                  <h5 style="color:var(--navy);font-weight:600;margin-bottom:0.5rem;">68% — Merci à tous !</h5>
+                  <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.72;max-width:100%;">On a atteint les 68% en seulement 8 jours. C'est incroyable. Je remercie tous les soutiens, en particulier la diaspora en France et à Mayotte. Il reste 22 jours — partagez autour de vous !</p>
+                </div>
+
+                <div style="position:relative;">
+                  <div style="position:absolute;left:-1.85rem;top:4px;width:10px;height:10px;border-radius:50%;background:var(--border-solid);border:2px solid var(--white);"></div>
+                  <p style="font-size:0.75rem;color:var(--text-light);font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.35rem;">10 décembre 2024</p>
+                  <h5 style="color:var(--navy);font-weight:600;margin-bottom:0.5rem;">Lancement de la collecte</h5>
+                  <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.72;max-width:100%;">Après 3 ans de travail, la collecte est enfin lancée ! Merci à FaidaKomori pour l'accompagnement et la mise en ligne. L'objectif est de 400 000 KMF pour imprimer 500 exemplaires.</p>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- fin data-tabs -->
+
+        </div><!-- fin colonne gauche -->
+
+        <!-- ── Colonne droite : Sticky sidebar ───────────── -->
+        <aside>
+          <div class="sticky-card">
+            <div class="sticky-card__header">
+              <div class="sticky-card__amount">272 000 <span style="font-size:1rem;font-weight:500;">KMF</span></div>
+              <p class="sticky-card__label">collectés sur 400 000 KMF</p>
+              <div style="margin-top:1rem;">
+                <div class="progress-bar" style="height:8px;">
+                  <div class="progress-bar__fill progress-bar__fill--prevente" data-pct="68"></div>
+                </div>
+                <div style="display:flex;justify-content:space-between;margin-top:0.4rem;">
+                  <span class="progress-pct progress-pct--prevente" style="font-size:1rem;">68%</span>
+                  <span style="font-size:0.78rem;color:var(--text-light);">objectif : 400 000 KMF</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="sticky-card__body">
+              <div class="sticky-card__stats">
+                <div>
+                  <span class="sticky-card__stat-val">43</span>
+                  <span class="sticky-card__stat-lbl">Soutiens</span>
+                </div>
+                <div>
+                  <span class="sticky-card__stat-val">22</span>
+                  <span class="sticky-card__stat-lbl">Jours restants</span>
+                </div>
+                <div>
+                  <span class="sticky-card__stat-val">128K</span>
+                  <span class="sticky-card__stat-lbl">KMF restants</span>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-full btn-lg" data-open-modal="modal-soutien" style="margin-bottom:0.75rem;">
+                📦 Soutenir ce projet
+                <span class="btn-icon-wrap">→</span>
+              </button>
+              <button class="btn btn-ghost btn-full" onclick="navigator.share ? navigator.share({title:'Livre de cuisine comorienne',url:window.location.href}) : null">
+                🔗 Partager le projet
+              </button>
+
+              <div class="divider"></div>
+
+              <!-- Infos clés -->
+              <div style="display:flex;flex-direction:column;gap:0.75rem;">
+                <div style="display:flex;justify-content:space-between;font-size:0.85rem;">
+                  <span style="color:var(--text-muted);">Type</span>
+                  <span class="badge badge-prevente">📦 Prévente</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;font-size:0.85rem;">
+                  <span style="color:var(--text-muted);">Secteur</span>
+                  <strong style="color:var(--navy);">Culture & Arts</strong>
+                </div>
+                <div style="display:flex;justify-content:space-between;font-size:0.85rem;">
+                  <span style="color:var(--text-muted);">Île</span>
+                  <strong style="color:var(--navy);">Grande Comore</strong>
+                </div>
+                <div style="display:flex;justify-content:space-between;font-size:0.85rem;">
+                  <span style="color:var(--text-muted);">Remboursement</span>
+                  <strong style="color:var(--ocean);">Si objectif non atteint</strong>
+                </div>
+                <div style="display:flex;justify-content:space-between;font-size:0.85rem;">
+                  <span style="color:var(--text-muted);">Commission</span>
+                  <strong style="color:var(--navy);">3% si succès</strong>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+              <div style="background:var(--ocean-pale);border-radius:var(--radius-sm);padding:1rem;border:1px solid rgba(10,123,108,0.15);">
+                <p style="font-size:0.82rem;color:var(--ocean);font-weight:600;margin-bottom:0.25rem;">🔒 Paiement sécurisé</p>
+                <p style="font-size:0.78rem;color:var(--text-muted);margin:0;max-width:100%;line-height:1.6;">Huri Money · M-Pesa · Virement bancaire. Vos fonds sont sécurisés jusqu'à la fin de la collecte.</p>
+              </div>
+
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ── MODAL SOUTIEN ─────────────────────────────────────── -->
+  <div class="modal-overlay" id="modal-soutien">
+    <div class="modal modal-relative">
+      <button class="modal__close" onclick="closeModal('modal-soutien')">✕</button>
+      <span class="modal__icon">📦</span>
+      <h3 class="modal__title">Soutenir ce projet</h3>
+      <p class="modal__sub">Choisissez votre montant et votre moyen de paiement. Vous recevrez votre contrepartie une fois l'objectif atteint.</p>
+
+      <form id="don-form" novalidate>
+        <div class="form-group">
+          <label class="form-label">Montant de votre soutien (KMF)</label>
+          <div class="amount-grid">
+            <button type="button" class="amount-btn" data-amount="3000">3 000</button>
+            <button type="button" class="amount-btn selected" data-amount="5000">5 000</button>
+            <button type="button" class="amount-btn" data-amount="10000">10 000</button>
+            <button type="button" class="amount-btn" data-amount="15000">15 000</button>
+            <button type="button" class="amount-btn" data-amount="25000">25 000</button>
+            <button type="button" class="amount-btn" data-amount="">Autre</button>
+          </div>
+          <input type="number" id="custom-amount" class="form-input" placeholder="Ou saisir un montant personnalisé" value="5000" style="margin-top:0.5rem;" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Moyen de paiement</label>
+          <div class="payment-options">
+            <div class="payment-option selected">
+              <span class="payment-option__icon">📱</span>
+              <div>
+                <strong style="font-size:0.9rem;">Huri Money</strong>
+                <p style="font-size:0.78rem;color:var(--text-muted);margin:0;max-width:100%;">Paiement mobile instantané</p>
+              </div>
+            </div>
+            <div class="payment-option">
+              <span class="payment-option__icon">💚</span>
+              <div>
+                <strong style="font-size:0.9rem;">M-Pesa</strong>
+                <p style="font-size:0.78rem;color:var(--text-muted);margin:0;max-width:100%;">Via votre compte M-Pesa</p>
+              </div>
+            </div>
+            <div class="payment-option">
+              <span class="payment-option__icon">🏦</span>
+              <div>
+                <strong style="font-size:0.9rem;">Virement bancaire</strong>
+                <p style="font-size:0.78rem;color:var(--text-muted);margin:0;max-width:100%;">RIB fourni après confirmation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="don-nom">Votre nom (optionnel)</label>
+          <input type="text" id="don-nom" class="form-input" placeholder="Pour les remerciements" />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full btn-lg">
+          Confirmer mon soutien
+          <span class="btn-icon-wrap">→</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ── MODAL SUCCÈS DON ──────────────────────────────────── -->
+  <div class="modal-overlay" id="modal-don-success">
+    <div class="modal success-modal modal-relative">
+      <button class="modal__close" onclick="closeModal('modal-don-success')">✕</button>
+      <span class="success-modal__icon">🎉</span>
+      <h3 class="modal__title">Merci pour votre soutien !</h3>
+      <p style="color:var(--text-muted);margin-bottom:1.5rem;line-height:1.75;">
+        Votre soutien a bien été enregistré. Vous recevrez vos instructions de paiement par WhatsApp dans les prochaines heures.
+      </p>
+      <div style="background:var(--sand);border-radius:var(--radius-sm);padding:1.1rem;margin-bottom:1.5rem;text-align:left;">
+        <p style="font-size:0.85rem;margin:0;color:var(--text-muted);max-width:100%;line-height:1.65;">
+          📋 <strong>Prochaines étapes :</strong><br/>
+          1. Vous recevrez un WhatsApp avec les détails de paiement<br/>
+          2. Une fois le paiement confirmé, votre place est réservée<br/>
+          3. Votre contrepartie vous sera livrée après l'impression
+        </p>
+      </div>
+      <a href="projets.html" class="btn btn-primary btn-full">Voir d'autres projets</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="footer__logo"><img src="img/logo-fk-icon.svg" alt="FaidaKomori" class="footer__logo-img" />Faida<span>Komori</span></a>
+          <p class="footer__desc">La première plateforme de financement participatif des Comores.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social">📘</a>
+            <a href="#" class="footer__social">📷</a>
+            <a href="#" class="footer__social">💬</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Navigation</h5>
+          <ul class="footer__links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Tous les projets</a></li>
+            <li><a href="deposer.html">Déposer un projet</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Financement</h5>
+          <ul class="footer__links">
+            <li><a href="deposer.html?type=prevente">📦 Prévente</a></li>
+            <li><a href="deposer.html?type=dons">🤝 Dons</a></li>
+            <li><a href="deposer.html?type=investissement">📈 Investissement</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Contact</h5>
+          <div class="footer__contact">
+            <div class="footer__contact-item"><span>💬</span><span>WhatsApp : +269 XXX XXXX</span></div>
+            <div class="footer__contact-item"><span>📧</span><span>contact@faidakomori.km</span></div>
+            <div class="footer__contact-item"><span>📍</span><span>Moroni, Union des Comores</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 FaidaKomori. Tous droits réservés. 🇰🇲</span>
+        <div class="footer__legal">
+          <a href="#">Mentions légales</a>
+          <a href="#">Conditions d'utilisation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

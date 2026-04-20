@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Déposer mon projet — FaidaKomori</title>
+  <meta name="description" content="Déposez votre candidature sur FaidaKomori. Prévente, dons ou investissement — notre équipe vous répond sous 72h." />
+  <meta property="og:title"       content="Déposer mon projet — FaidaKomori" />
+  <meta property="og:description" content="Déposez votre candidature en 4 étapes. Notre équipe vous contacte sous 72h." />
+  <meta property="og:type"        content="website" />
+  <meta name="theme-color"        content="#00C853" />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">
+          <img src="img/logo-fk-icon.svg" alt="FaidaKomori logo" class="navbar__logo-img" />Faida<span>Komori</span>
+        </a>
+        <ul class="navbar__links">
+          <li><a href="index.html#comment-ca-marche">Comment ça marche</a></li>
+          <li><a href="index.html#modeles">Les 3 modèles</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="deposer.html" class="btn btn-primary btn-sm">Déposer mon projet</a></li>
+        </ul>
+        <button class="navbar__hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="navbar__mobile">
+      <a href="index.html#comment-ca-marche">Comment ça marche</a>
+      <a href="index.html#modeles">Les 3 modèles</a>
+      <a href="projets.html">Projets</a>
+      <a href="deposer.html" class="btn btn-primary btn-sm">Déposer mon projet</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       PAGE HERO
+  ══════════════════════════════════════════ -->
+  <section class="page-hero">
+    <div class="container" style="text-align:center;">
+      <span class="section-label" style="display:inline-flex;">Candidature</span>
+      <h1 class="page-hero__title" style="text-align:center;">Déposez votre projet</h1>
+      <p class="page-hero__sub" style="text-align:center;margin-left:auto;margin-right:auto;max-width:580px;">Remplissez ce formulaire en 4 étapes. Notre équipe vous contactera dans les <strong style="color:var(--gold);">72h</strong> par WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FORMULAIRE
+  ══════════════════════════════════════════ -->
+  <section class="section section--sand">
+    <div class="container">
+
+      <!-- Stepper -->
+      <div class="stepper">
+        <div class="stepper__step active" data-step="0">
+          <div class="stepper__num">1</div>
+          <span class="stepper__label">Modèle</span>
+        </div>
+        <div class="stepper__line"></div>
+        <div class="stepper__step" data-step="1">
+          <div class="stepper__num">2</div>
+          <span class="stepper__label">Vous</span>
+        </div>
+        <div class="stepper__line"></div>
+        <div class="stepper__step" data-step="2">
+          <div class="stepper__num">3</div>
+          <span class="stepper__label">Votre projet</span>
+        </div>
+        <div class="stepper__line"></div>
+        <div class="stepper__step" data-step="3">
+          <div class="stepper__num">4</div>
+          <span class="stepper__label">Confirmation</span>
+        </div>
+      </div>
+
+      <!-- Formulaire -->
+      <form id="candidature-form" novalidate>
+        <input type="hidden" id="selected-type" name="type" />
+
+        <!-- ── ÉTAPE 1 : Choisir le modèle ────────────── -->
+        <div class="form-step active" id="step-0">
+          <div class="form-card">
+            <h3 class="form-card__title">Choisissez votre modèle de financement</h3>
+            <p class="form-card__sub">Sélectionnez le modèle qui correspond le mieux à votre projet. Vous pouvez changer d'avis lors de l'entretien avec notre équipe.</p>
+
+            <div class="type-cards">
+              <div class="type-card type-card--prevente" data-type="prevente">
+                <div class="type-card__icon">📦</div>
+                <div class="type-card__title">Prévente</div>
+                <div class="type-card__desc">Vente anticipée de votre produit pour financer sa création</div>
+              </div>
+              <div class="type-card type-card--dons" data-type="dons">
+                <div class="type-card__icon">🤝</div>
+                <div class="type-card__title">Dons & Soutien</div>
+                <div class="type-card__desc">Collecte solidaire pour un projet social ou culturel</div>
+              </div>
+              <div class="type-card" data-type="investissement">
+                <div class="type-card__icon">📈</div>
+                <div class="type-card__title">Investissement</div>
+                <div class="type-card__desc">Parts de votre entreprise en échange d'un financement</div>
+              </div>
+            </div>
+
+            <p class="form-error type-error" style="font-size:0.9rem;margin-bottom:1rem;">Veuillez sélectionner un modèle pour continuer.</p>
+
+            <!-- Récapitulatif des modèles -->
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem;">
+              <div style="background:rgba(232,160,32,0.08);border-radius:var(--radius);padding:1rem;font-size:0.82rem;color:var(--text-muted);">
+                <strong style="color:var(--gold-dark);">📦 Prévente :</strong><br/>
+                Remboursement si objectif non atteint. Idéal pour créateurs et artisans.
+              </div>
+              <div style="background:rgba(10,123,108,0.08);border-radius:var(--radius);padding:1rem;font-size:0.82rem;color:var(--text-muted);">
+                <strong style="color:var(--ocean);">🤝 Dons :</strong><br/>
+                Soutien solidaire. Idéal pour associations, ONG, projets éducatifs.
+              </div>
+              <div style="background:rgba(13,34,68,0.08);border-radius:var(--radius);padding:1rem;font-size:0.82rem;color:var(--text-muted);">
+                <strong style="color:var(--navy);">📈 Investissement :</strong><br/>
+                Parts en contrepartie. Idéal pour entrepreneurs à fort potentiel.
+              </div>
+            </div>
+
+            <div class="form-nav" style="justify-content:flex-end;">
+              <button type="button" class="btn btn-primary btn-lg" data-next>
+                Suivant — Vos informations →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── ÉTAPE 2 : Informations personnelles ────── -->
+        <div class="form-step" id="step-1">
+          <div class="form-card">
+            <h3 class="form-card__title">Vos informations personnelles</h3>
+            <p class="form-card__sub">Ces informations nous permettront de vous contacter et de personnaliser notre accompagnement.</p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="prenom">Prénom <span>*</span></label>
+                <input type="text" id="prenom" name="prenom" class="form-input" placeholder="Ex : Fatima" required />
+                <p class="form-error">Ce champ est obligatoire.</p>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="nom">Nom <span>*</span></label>
+                <input type="text" id="nom" name="nom" class="form-input" placeholder="Ex : Abdou" required />
+                <p class="form-error">Ce champ est obligatoire.</p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ile">Île / Région <span>*</span></label>
+              <select id="ile" name="ile" class="form-select" required>
+                <option value="">-- Choisissez votre île --</option>
+                <option value="Grande Comore">🏝️ Grande Comore (Ngazidja)</option>
+                <option value="Anjouan">🏝️ Anjouan (Ndzuani)</option>
+                <option value="Mohéli">🏝️ Mohéli (Mwali)</option>
+                <option value="Diaspora">🌍 Diaspora (projet basé aux Comores)</option>
+              </select>
+              <p class="form-error">Ce champ est obligatoire.</p>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="tel">Téléphone / WhatsApp <span>*</span></label>
+                <input type="tel" id="tel" name="tel" class="form-input" placeholder="+269 XXX XXXX" required />
+                <p class="form-hint">Nous vous contacterons via ce numéro dans les 72h.</p>
+                <p class="form-error">Ce champ est obligatoire.</p>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email (optionnel)</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="votre@email.com" />
+                <p class="form-error">Adresse email invalide.</p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Avez-vous déjà une entreprise enregistrée ? <span>*</span></label>
+              <div class="form-radio-group">
+                <label class="form-radio">
+                  <input type="radio" name="entreprise" value="oui" required />
+                  Oui, j'ai déjà une entreprise
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="entreprise" value="non" required />
+                  Non, pas encore
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="entreprise" value="en-cours" required />
+                  En cours de création
+                </label>
+              </div>
+              <p class="form-hint">Si vous n'avez pas encore d'entreprise, FaidaKomori peut vous aider à en créer une via l'ANPI.</p>
+            </div>
+
+            <div class="form-nav">
+              <button type="button" class="btn btn-outline-navy" data-prev>← Retour</button>
+              <button type="button" class="btn btn-primary btn-lg" data-next>Suivant — Votre projet →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── ÉTAPE 3 : Votre projet ─────────────────── -->
+        <div class="form-step" id="step-2">
+          <div class="form-card">
+            <h3 class="form-card__title">Parlez-nous de votre projet</h3>
+            <p class="form-card__sub">Plus vous êtes précis(e), plus notre équipe pourra vous aider efficacement.</p>
+
+            <div class="form-group">
+              <label class="form-label" for="nom-projet">Nom du projet <span>*</span></label>
+              <input type="text" id="nom-projet" name="nom-projet" class="form-input" placeholder="Ex : Livre de cuisine comorienne" required />
+              <p class="form-error">Ce champ est obligatoire.</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="secteur">Secteur d'activité <span>*</span></label>
+              <select id="secteur" name="secteur" class="form-select" required>
+                <option value="">-- Choisissez un secteur --</option>
+                <option value="Agriculture">🌾 Agriculture</option>
+                <option value="Pêche">🐟 Pêche</option>
+                <option value="Commerce">🛒 Commerce</option>
+                <option value="Artisanat">🎨 Artisanat</option>
+                <option value="Culture">🎭 Culture & Arts</option>
+                <option value="Tech">💻 Tech & Digital</option>
+                <option value="Services">🔧 Services</option>
+                <option value="Éducation">🎓 Éducation</option>
+                <option value="Santé">🏥 Santé</option>
+                <option value="Tourisme">✈️ Tourisme</option>
+                <option value="Restauration">🍽️ Restauration</option>
+                <option value="Autre">📦 Autre</option>
+              </select>
+              <p class="form-error">Ce champ est obligatoire.</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="description">Description du projet <span>*</span></label>
+              <textarea id="description" name="description" class="form-textarea" placeholder="Décrivez votre projet en quelques phrases : qu'est-ce que c'est, pourquoi vous le faites, à qui ça s'adresse..." required></textarea>
+              <p class="form-error">Ce champ est obligatoire.</p>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="montant">Montant recherché (KMF) <span>*</span></label>
+                <input type="number" id="montant" name="montant" class="form-input" placeholder="Ex : 500000" min="50000" required />
+                <p class="form-hint">Minimum recommandé : 50 000 KMF.</p>
+                <p class="form-error">Ce champ est obligatoire.</p>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="duree">Durée de collecte souhaitée <span>*</span></label>
+                <select id="duree" name="duree" class="form-select" required>
+                  <option value="">-- Choisissez une durée --</option>
+                  <option value="30">30 jours</option>
+                  <option value="60">60 jours</option>
+                  <option value="90">90 jours</option>
+                </select>
+                <p class="form-error">Ce champ est obligatoire.</p>
+              </div>
+            </div>
+
+            <!-- Champ conditionnel — PRÉVENTE -->
+            <div class="conditional-field" data-show-for="prevente">
+              <div class="divider"></div>
+              <h4 style="color:var(--gold-dark);margin-bottom:1.25rem;">📦 Informations Prévente</h4>
+              <div class="form-group">
+                <label class="form-label" for="produit-prevente">Quel est le produit que vous voulez créer ?</label>
+                <input type="text" id="produit-prevente" name="produit-prevente" class="form-input" placeholder="Ex : Livre de cuisine illustré, 200 pages, édition limitée" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contrepartie">Quelle est la contrepartie pour les soutiens ?</label>
+                <textarea id="contrepartie" name="contrepartie" class="form-textarea" style="min-height:80px;" placeholder="Ex : Pour 5 000 KMF → 1 livre dédicacé livré à domicile. Pour 10 000 KMF → 2 livres + citation dans les remerciements."></textarea>
+              </div>
+            </div>
+
+            <!-- Champ conditionnel — INVESTISSEMENT -->
+            <div class="conditional-field" data-show-for="investissement">
+              <div class="divider"></div>
+              <h4 style="color:var(--navy);margin-bottom:1.25rem;">📈 Informations Investissement</h4>
+              <div class="form-group">
+                <label class="form-label" for="parts-range">Quel pourcentage de parts êtes-vous prêt(e) à céder ?</label>
+                <input type="range" id="parts-range" name="parts" class="form-range" min="5" max="49" value="20" step="1" />
+                <div class="range-display"><span id="parts-display">20%</span> des parts</div>
+                <p class="form-hint">Le pourcentage final sera négocié lors de l'entretien avec notre équipe. Entre 5% et 49% maximum.</p>
+              </div>
+            </div>
+
+            <!-- Champ conditionnel — DONS -->
+            <div class="conditional-field" data-show-for="dons">
+              <div class="divider"></div>
+              <h4 style="color:var(--ocean);margin-bottom:1.25rem;">🤝 Impact social & culturel</h4>
+              <div class="form-group">
+                <label class="form-label" for="impact">Quel impact social ou culturel aura votre projet ?</label>
+                <textarea id="impact" name="impact" class="form-textarea" style="min-height:80px;" placeholder="Ex : Permettre à 40 enfants d'accéder à une éducation de qualité dans un village rural de Mohéli..."></textarea>
+              </div>
+            </div>
+
+            <div class="form-nav">
+              <button type="button" class="btn btn-outline-navy" data-prev>← Retour</button>
+              <button type="button" class="btn btn-primary btn-lg" data-next>Suivant — Confirmation →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── ÉTAPE 4 : Confirmation ──────────────────── -->
+        <div class="form-step" id="step-3">
+          <div class="form-card">
+            <h3 class="form-card__title">Récapitulatif de votre candidature</h3>
+            <p class="form-card__sub">Vérifiez vos informations avant d'envoyer votre candidature.</p>
+
+            <!-- Récapitulatif (rempli par JS) -->
+            <div class="recap"></div>
+
+            <div class="form-group">
+              <label class="form-check">
+                <input type="checkbox" id="cgv" required />
+                J'accepte les <a href="#" style="color:var(--navy);text-decoration:underline;">conditions d'utilisation</a> de FaidaKomori et je certifie que les informations fournies sont exactes.
+              </label>
+            </div>
+
+            <div style="background:rgba(10,123,108,0.08);border-radius:var(--radius);padding:1.25rem;margin-bottom:1.5rem;border-left:3px solid var(--ocean);">
+              <p style="font-size:0.88rem;color:var(--text-muted);margin:0;">
+                🔒 <strong>Vos données sont sécurisées.</strong> FaidaKomori ne partagera jamais vos informations personnelles sans votre consentement. Nous vous contacterons uniquement par WhatsApp ou email pour le suivi de votre candidature.
+              </p>
+            </div>
+
+            <div class="form-nav">
+              <button type="button" class="btn btn-outline-navy" data-prev>← Retour</button>
+              <button type="submit" class="btn btn-primary btn-lg">
+                🚀 Envoyer ma candidature
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </form><!-- fin form -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       MODAL SUCCÈS
+  ══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="modal-success">
+    <div class="modal success-modal modal-relative">
+      <button class="modal__close" onclick="closeModal('modal-success')">✕</button>
+      <span class="success-modal__icon">🎉</span>
+      <h3 class="modal__title">Candidature reçue !</h3>
+      <p style="color:var(--text-muted);margin-bottom:1.5rem;line-height:1.75;">
+        Merci pour votre candidature ! Notre équipe l'a bien reçue et vous contactera dans les <strong>72 heures</strong> par WhatsApp pour organiser un entretien de sélection.
+      </p>
+      <div style="background:var(--sand);border-radius:var(--radius);padding:1.25rem;margin-bottom:1.5rem;text-align:left;">
+        <p style="font-size:0.9rem;margin:0;color:var(--text-muted);">
+          📋 <strong>Prochaines étapes :</strong><br/>
+          1. Entretien WhatsApp ou en personne<br/>
+          2. Évaluation sur notre grille de 100 points<br/>
+          3. Mise en ligne de votre projet si sélectionné
+        </p>
+      </div>
+      <a href="index.html" class="btn btn-primary btn-full">Retour à l'accueil</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="footer__logo"><img src="img/logo-fk-icon.svg" alt="FaidaKomori" class="footer__logo-img" />Faida<span>Komori</span></a>
+          <p class="footer__desc">La première plateforme de financement participatif des Comores.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social">📘</a>
+            <a href="#" class="footer__social">📷</a>
+            <a href="#" class="footer__social">💬</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Navigation</h5>
+          <ul class="footer__links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Tous les projets</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Financement</h5>
+          <ul class="footer__links">
+            <li><a href="deposer.html?type=prevente">📦 Prévente</a></li>
+            <li><a href="deposer.html?type=dons">🤝 Dons</a></li>
+            <li><a href="deposer.html?type=investissement">📈 Investissement</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Contact</h5>
+          <div class="footer__contact">
+            <div class="footer__contact-item"><span>💬</span><span>WhatsApp : +269 XXX XXXX</span></div>
+            <div class="footer__contact-item"><span>📧</span><span>contact@faidakomori.km</span></div>
+            <div class="footer__contact-item"><span>📍</span><span>Moroni, Union des Comores</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 FaidaKomori. Tous droits réservés. 🇰🇲</span>
+        <div class="footer__legal">
+          <a href="#">Mentions légales</a>
+          <a href="#">Conditions d'utilisation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
